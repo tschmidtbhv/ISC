@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+    <name>Industrieschule</name>
+    <creationDate>2012-06-19</creationDate>
+    <author>Thomas Schmidt / Christian Ziegenrücker</author>
+    <authorEmail>ithommy@me.com</authorEmail>
+    <authorUrl>http://www.unknownurl.de</authorUrl>
+    <copyright>Copyright (C) 2012 Thomas Schmidt / Christian Ziegenrücker. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt or http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <version>0.1</version>
+    <description>Standard Template der Industrieschule Chemnitz</description>
+    <files>
+        <folder>css</folder>
+        <folder>html</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+        <folder>language</folder>
+        <filename>apple-touch-icon.png</filename>
+        <filename>apple-touch-icon-57x57-precomposed.png</filename>
+        <filename>apple-touch-icon-72x72-precomposed.png</filename>
+        <filename>apple-touch-icon-114x114-precomposed.png</filename>
+        <filename>apple-touch-icon-precomposed.png</filename>
+        <filename>crossdomain.xml</filename>
+        <filename>error.php</filename>
+        <filename>favicon.ico</filename>
+        <filename>htaccess-indu.txt</filename>
+        <filename>humans.txt</filename>
+        <filename>index.html</filename>
+        <filename>index.php</filename>
+        <filename>robots.txt</filename>
+        <filename>template_preview.png</filename>
+        <filename>template_thumbnail.png</filename>
+        <filename>templateDetails.xml</filename>
+    </files>
+    <positions>
+        <position>logo</position>
+        <position>tagline</position>
+        <position>search</position>
+        <position>topmenu</position>
+        <position>banner</position>
+        <position>breadcrumbs</position>
+        <position>left</position>
+        <position>center</position>
+        <position>right</position>
+        <position>bottom</position>
+        <position>footer</position>
+        <position>debug</position>
+        <position>position-0</position>
+        <position>position-1</position>
+        <position>position-2</position>
+        <position>position-3</position>
+        <position>position-4</position>
+        <position>position-5</position>
+        <position>position-6</position>
+        <position>position-7</position>
+        <position>position-8</position>
+        <position>position-9</position>
+        <position>position-10</position>
+        <position>position-11</position>
+        <position>position-12</position>
+        <position>position-13</position>
+        <position>position-14</position>
+        <position>position-15</position>
+    </positions>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.tpl_h5bp4j.ini</language>
+        <language tag="en-GB">en-GB/en-GB.tpl_h5bp4j.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="logo" type="media"
+                       label="TPL_H5BP4J_FIELD_LOGO_LABEL" description="TPL_H5BP4J_FIELD_LOGO_DESC" />
+
+                <field name="sitename"  type="text" default="My Website"
+                       label="TPL_H5BP4J_FIELD_SITENAME_LABEL"
+                       description="TPL_H5BP4J_FIELD_SITENAME_DESC"
+                       filter="string" />
+
+                <field name="tagline"  type="text" default="Open Source Content Management"
+                       label="TPL_H5BP4J_FIELD_TAGLINE_LABEL"
+                       description="TPL_H5BP4J_FIELD_TAGLINE_DESC"
+                       filter="string" />
+
+                <field name="analytics"  type="text" default=""
+                       label="TPL_H5BP4J_FIELD_GA_LABEL"
+                       description="TPL_H5BP4J_FIELD_GA_DESC"
+                       filter="string" />
+            </fieldset>
+            <fieldset name="advanced">
+                <field name="modernizr" type="list" default="0"
+                       label="TPL_H5BP4J_FIELD_MODERNIZR_LABEL"
+                       description="TPL_H5BP4J_FIELD_MODERNIZR_DESC"
+                       filter="integer" >
+                    <option value="0">TPL_H5BP4J_FIELD_MODERNIZR_OPTION_NO</option>
+                    <option value="1">TPL_H5BP4J_FIELD_MODERNIZR_OPTION_YES</option>
+                </field>
+
+                <field name="jsframework" type="list" default="moocm"
+                       label="TPL_H5BP4J_FIELD_JSFRAMEWORK_LABEL"
+                       description="TPL_H5BP4J_FIELD_JSFRAMEWORK_DESC"
+                       filter="word" >
+                    <option value="none">none</option>
+                    <option value="moocm">default (Mootools core + more)</option>
+                    <option value="mooc">Mootools core ONLY</option>
+                    <option value="jq">jQuery ONLY</option>
+                    <option value="moocjq">Mootools core + jQuery</option>
+                    <option value="moocmjq">Mootools core+more + jQuery</option>
+                </field>
+
+                <field name="jqversion" type="list" default="1.7.1"
+                       label="TPL_H5BP4J_FIELD_JQVERSION_LABEL"
+                       description="TPL_H5BP4J_FIELD_JQVERSION_DESC"
+                       filter="string" >
+                    <option value="1.6.2">1.6.2</option>
+                    <option value="1.7.1">1.7.1</option>
+                </field>
+
+                <field name="pluginsjs" type="list" default="0"
+                       label="TPL_H5BP4J_FIELD_PLUGINSJS_LABEL"
+                       description="TPL_H5BP4J_FIELD_PLUGINSJS_DESC"
+                       filter="integer" >
+                    <option value="0">TPL_H5BP4J_FIELD_PLUGINSJS_OPTION_NO</option>
+                    <option value="1">TPL_H5BP4J_FIELD_PLUGINSJS_OPTION_YES</option>
+                </field>
+
+                <field name="jqbottom" type="list" default="0"
+                       label="TPL_H5BP4J_FIELD_JQBOTTOM_LABEL"
+                       description="TPL_H5BP4J_FIELD_JQBOTTOM_DESC"
+                       filter="integer" >
+                    <option value="0">TPL_H5BP4J_FIELD_JQBOTTOM_OPTION_TOP</option>
+                    <option value="1">TPL_H5BP4J_FIELD_JQBOTTOM_OPTION_BOTTOM</option>
+                </field>
+
+                <field type="spacer" name="mobile" label="&lt;b&gt;Mobile options&lt;/b&gt;" />
+
+                <field name="iskip"  type="list" default="1"
+                       label="TPL_H5BP4J_FIELD_ISKIP_LABEL"
+                       description="TPL_H5BP4J_FIELD_ISKIP_DESC"
+                       filter="integer" >
+                    <option value="0">TPL_H5BP4J_FIELD_ISKIP_OPTION_NO</option>
+                    <option value="1">TPL_H5BP4J_FIELD_ISKIP_OPTION_YES</option>
+                </field>
+
+                <field name="viewport"  type="text" default="width=768"
+                       label="TPL_H5BP4J_FIELD_VIEWPORT_LABEL"
+                       description="TPL_H5BP4J_FIELD_VIEWPORT_DESC"
+                       filter="string" />
+
+                <field name="rdebug"  type="list" default="0"
+                       label="TPL_H5BP4J_FIELD_RDEBUG_LABEL"
+                       description="TPL_H5BP4J_FIELD_RDEBUG_DESC"
+                       filter="integer" >
+                    <option value="0">TPL_H5BP4J_FIELD_RDEBUG_OPTION_NO</option>
+                    <option value="1">TPL_H5BP4J_FIELD_RDEBUG_OPTION_YES</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
