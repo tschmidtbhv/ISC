@@ -1186,12 +1186,13 @@ only screen and (min-device-pixel-ratio : 1.5)
 }
 
 #logo  {
-    height: 110px;
-    margin: 5pxs;
+    height: 100px;
+    margin-top: 15px;
+    max-width: none;
 }
 
 #logo img {
-    height: 110px;
+    height: 100px;
     width: auto !important;
 }
 
