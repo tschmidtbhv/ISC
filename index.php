@@ -229,34 +229,36 @@ if ($iskip) {
 
     <?php if ($wrapper) { ?>
     <div id="wrapper">
+        <?php if ($left) { ?>
+        <div id="left">
+            <jdoc:include type="modules" name="left" style="xhtml"/>
+            <jdoc:include type="modules" name="position-4" style="xhtml"/>
+            <jdoc:include type="modules" name="position-7" style="xhtml"/>
+            <jdoc:include type="modules" name="position-5" style="xhtml"/>
+        </div>
+        <?php } ?>
         <div id="main" class="<?php echo $centerdiv; ?>">
           <jdoc:include type="message" />
           <jdoc:include type="component" />
         </div>
-    
-        <?php if ($left) { ?>
-        <div id="left">
-          <jdoc:include type="modules" name="left" style="xhtml"/>
-          <jdoc:include type="modules" name="position-4" style="xhtml"/>
-          <jdoc:include type="modules" name="position-7" style="xhtml"/>
-          <jdoc:include type="modules" name="position-5" style="xhtml"/>
-        </div>
-        <?php } ?>
+
     </div>
     <?php } else { ?>
+      <?php if ($left) { ?>
+          <div id="left">
+              <jdoc:include type="modules" name="left" style="xhtml"/>
+              <jdoc:include type="modules" name="position-4" style="xhtml"/>
+              <jdoc:include type="modules" name="position-7" style="xhtml"/>
+              <jdoc:include type="modules" name="position-5" style="xhtml"/>
+          </div>
+          <?php } ?>
+
         <div id="main" class="<?php echo $centerdiv; ?>">
           <jdoc:include type="message" />
           <jdoc:include type="component" />
         </div>
         
-        <?php if ($left) { ?>
-        <div id="left">
-          <jdoc:include type="modules" name="left" style="xhtml"/>
-          <jdoc:include type="modules" name="position-4" style="xhtml"/>
-          <jdoc:include type="modules" name="position-7" style="xhtml"/>
-          <jdoc:include type="modules" name="position-5" style="xhtml"/>
-        </div>
-        <?php } ?>
+
     <?php } ?>
 
     <?php if ($right) { ?>
