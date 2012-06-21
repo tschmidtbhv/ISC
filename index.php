@@ -359,6 +359,7 @@ if ($iskip) {
 	}
   </script>
   <?php } ?>
+   <script src="<?php echo $this->baseurl ?>/templates/<?php echo $tpn ?>/js/template.js"></script>
   </div>
   </div>
 </body>

@@ -14,7 +14,7 @@ html {
 body {
     font-size:0.8rem;
     line-height:1.1rem;
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     background:#aaa;
 }
 
@@ -43,29 +43,45 @@ body {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 
-    -webkit-box-shadow: 0px 2px 24px #000000; /* webkit browser*/ -moz-box-shadow: 0px 2px 24px #000000; /* firefox */ box-shadow: 0px 2px 24px #000000;
+    -webkit-box-shadow: 0px 2px 24px #000000; /* webkit browser*/
+    -moz-box-shadow: 0px 2px 24px #000000; /* firefox */ 
+    box-shadow: 0px 2px 24px #000000;
 }
 
 #content {
-    background:transparent;
+    background: transparent;
+    
     color:#222;
     padding-top:10px 0 20px 0;
     min-height:300px;
+    padding: 2%;
     padding-bottom: 1%;
+    
+    z-index: 10;
 }
 
 #contact-wrap {
     position: relative;
 }
 
-#specialRightBox{
+#specialRightBox {
     background-color: #fff;
     display: block;
-    right: -200px;
+    right: -240px;
+    
     position: absolute;
     top: 39px;
     width: 200px;
-    z-index: 5;
+    z-index: 0;
+    padding: 20px 10px;
+    padding-right: 30px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+    -webkit-box-shadow: 0px 2px 14px #000000; /* webkit browser*/
+    -moz-box-shadow: 0px 2px 14px #000000; /* firefox */ 
+    box-shadow: 0px 2px 14px #000000;
+    
 }
 
 #left{
@@ -83,15 +99,18 @@ body {
 #bottom {
     background:transparent;
     overflow:hidden;/*auto stretch height */
+    clear: both;
 }
 
 #footer {
+    background: transparent;
+    
     min-height:20px;
     clear:both;
     font-size:0.7rem;
-    background:transparent;
     color:#fff;
     padding:5px 0 5px 0;
+    
     -webkit-border-bottom-right-radius: 10px;
     -webkit-border-bottom-left-radius: 10px;
     -moz-border-radius-bottomright: 10px;
@@ -121,7 +140,9 @@ body {
     -webkit-border-bottom-right-radius: 20px;
     -moz-border-radius-bottomright: 20px;
     border-bottom-right-radius: 20px;
-    -webkit-box-shadow: 1px 3px 14px #969795; /* webkit browser*/ -moz-box-shadow: 1px 3px 14px #969795; /* firefox */ box-shadow: 1px 3px 14px #969795;
+    -webkit-box-shadow: 1px 3px 14px #969795; /* webkit browser*/
+    -moz-box-shadow: 1px 3px 14px #969795; /* firefox */
+    box-shadow: 1px 3px 14px #969795;
 }
 
 .centerAndRight {
@@ -313,7 +334,7 @@ h1 a, h2 a, h3 a {
 }
 
 ul.menu a {
-    padding-left: 1%;
+    padding: 3% 3%;
     background: #eeeeee; /* Old browsers */
     background: -moz-linear-gradient(top, #ffffff 0%, #eeeeee 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
@@ -336,7 +357,7 @@ ul.menu a.last {
     border-bottom-left-radius: 5px;
 }
 
-ul.menu a:hover{
+ul.menu a:hove {
 
 }
 
@@ -839,7 +860,8 @@ body {
     background: -o-linear-gradient(left, #aee4f9 0%,#2ab0ed 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(left, #aee4f9 0%,#2ab0ed 100%); /* IE10+ */
     background: linear-gradient(left, #aee4f9 0%,#2ab0ed 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aee4f9', endColorstr='#2ab0ed',GradientType=1 ); /* IE6-9 */}
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aee4f9', endColorstr='#2ab0ed',GradientType=1 ); /* IE6-9 */
+}
 
 #topmenu ul li, #topmenu ul li a:hover  {
     border-radius: 5px 5px 0px 0px;
@@ -1082,4 +1104,30 @@ only screen and (min-device-pixel-ratio : 1.5)
 }
 
 
+/** CZ **/
 
+#main {
+    min-height: 300px;
+}
+
+#specialRightBox {
+    min-height: 250px;
+}
+
+#specialRightBox form {
+    min-width: 200px;
+}
+
+#logo  {
+    height: 110px;
+    margin: 5pxs;
+}
+
+#logo img {
+    height: 110px;
+    width: auto !important;
+}
+
+#header {
+    height: 120px;
+}
