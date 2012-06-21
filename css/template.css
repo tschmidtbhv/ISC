@@ -963,12 +963,79 @@ to { -moz-transform:  scale(1.0) }
 @media only screen and (min-width : 321px) and (max-width: 767px)
 ,only screen and (min-width : 321px) and (max-width: 768px) and (orientation: portrait)
 {
+
+    h1 a, h2 a, h3 a {
+        color: #0164A5;
+        font-size: 280%;
+    }
+
     #header, #content, #bottom, #footer {
         width:100%;
     }
 
     #header {
         height:150px;
+    }
+
+    #listwrapper {
+        display: none;
+    }
+
+    #sitewrapper {
+        width:100%;
+    }
+
+    #content {
+        margin-top: 2%;
+    }
+
+    #left {
+        position: relative;
+        float: none;
+        width:98%;
+    }
+
+    #left ul.menu li, #right ul.menu li {
+        width: 100%;
+    }
+
+    #left ul.menu li {
+        font-size: 440%;
+        background-color: #fff;
+    }
+
+    #left ul.menu a {
+        display: block;
+        padding: 4%;
+    }
+
+    #left ul.menu li ul li {
+        font-size: 100%;
+    }
+
+    .centerAndLeft  {
+        float: none;
+        width: 93%;
+        margin-top: 2%;
+        -webkit-box-shadow: none; /* webkit browser*/
+        -moz-box-shadow: none; /* firefox */
+        box-shadow: none;
+    }
+
+    .item {
+        border-bottom: 1px dotted #CCCCCC;
+        width: 100%;
+    }
+
+    #specialRightBox {
+        display: none;
+    }
+
+    #main {
+        margin:1%;
+        padding: 2%;
+        font-size: 300%;
+        line-height: 1.2em;
     }
 
     #sitebg {
