@@ -139,13 +139,8 @@ if ($iskip) {
       </a>
     </div>
     
-    <div id="tagline_wrapper">        
-        <div id="tagline">
-            <strong>BSZ für Technik I</strong><br />
-            Park der OdF 1<br />
-            09111 Chemnitz<br />
-            +49 (0 37 1) 67 47 0<br />
-        </div>
+    <div id="tagline">
+        <?php echo htmlspecialchars($tagline); ?>
     </div>
 
     <?php if ($this->countModules('topmenu') || $this->countModules('position-1')) { ?>
@@ -361,12 +356,6 @@ if ($iskip) {
   </script>
   <?php } ?>
    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $tpn ?>/js/template.js"></script>
-   <script>
-       document.write("<p>devicePixelRatio: " + window.devicePixelRatio + "</p>");
-       if(window.matchMedia("(device-width:480px) and (orientation:portrait)").matches) {
-        document.write("480px");
-       }
-   </script>
   </div>
   </div>
 </body>
