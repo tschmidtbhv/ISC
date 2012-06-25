@@ -101,9 +101,7 @@ if ($iskip) {
   <!-- end CSS-->
   
   <!--[if lt IE 9]>
-     <script src="<?php echo $this->baseurl ?>/templates/<?php echo $tpn ?>/js/pie.js"></script>
-     <script type="text/javascript"></script>
-     <link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/<?php echo $tpn ?>/css/ie.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/<?php echo $tpn ?>/css/ie.css">
   <![endif]-->
 
   <?php if ($modernizr) { ?>
@@ -140,7 +138,12 @@ if ($iskip) {
     </div>
     
     <div id="tagline">
-        <?php echo htmlspecialchars($tagline); ?>
+        <div id="tagline_wrapper">        
+           <strong>BSZ für Technik I</strong><br />
+           Park der OdF 1<br />
+           09111 Chemnitz<br />
+           +49 (0 37 1) 67 47 0<br />
+       </div>
     </div>
 
     <?php if ($this->countModules('topmenu') || $this->countModules('position-1')) { ?>

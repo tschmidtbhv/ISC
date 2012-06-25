@@ -1278,6 +1278,16 @@ ul.menu li.active ul {
     letter-spacing: 0.15em;
 }
 
-#breadcrumbs a {
+#breadcrumbs a, #breadcrumbs a:visited  {
     color: white;
+}
+
+#breadcrumbs a:hover {
+    color: #00a;
+}
+
+.item-separator {
+    border: 0;
+    height: 24px;
+    background: url('../images/line.png') no-repeat center bottom;
 }
