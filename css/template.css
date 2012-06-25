@@ -999,10 +999,16 @@ to { -moz-transform:  scale(1.0) }
 }
 
 
-/* other from 320 to 767px, or iPad/iPhone portrait (if viewport set to width=768)
-   Shows left+center, right column flows below */
-@media only screen and (min-width : 321px) and (max-width: 767px)
-,only screen and (min-width : 321px) and (max-width: 768px) and (orientation: portrait)
+/* mobil devices with pixel ratio 1 - 2 */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1) and (orientation:portrait),
+only screen and (-webkit-min-device-pixel-ratio : 2) and (orientation:portrait),
+only screen and (-o-min-device-pixel-ratio: 3/2) and (orientation:portrait),
+only screen and (min--moz-device-pixel-ratio: 1) and (orientation:portrait),
+only screen and (min-device-pixel-ratio : 1) and (orientation:portrait),
+only screen and (-webkit-min-device-pixel-ratio : 1.5) and (orientation:portrait),
+only screen and (min--moz-device-pixel-ratio: 1.5) and (orientation:portrait),
+only screen and (min-device-pixel-ratio : 1.5) and (orientation:portrait)
 {
 
     h1 a, h2 a, h3 a {
@@ -1039,7 +1045,7 @@ to { -moz-transform:  scale(1.0) }
     #left {
         position: relative;
         float: none;
-        width:98%;
+        width:100%;
     }
 
     #left ul.menu li, #right ul.menu li {
@@ -1047,13 +1053,13 @@ to { -moz-transform:  scale(1.0) }
     }
 
     #left ul.menu li {
-        font-size: 440%;
+        font-size: 160%;
         background-color: #fff;
     }
 
     #left ul.menu a {
         display: block;
-        padding: 4%;
+        padding: 6%;
     }
 
     #left ul.menu li ul li {
@@ -1062,7 +1068,7 @@ to { -moz-transform:  scale(1.0) }
 
     .centerAndLeft  {
         float: none;
-        width: 93%;
+        width: 95%;
         margin-top: 2%;
         -webkit-box-shadow: none; /* webkit browser*/
         -moz-box-shadow: none; /* firefox */
@@ -1110,8 +1116,13 @@ to { -moz-transform:  scale(1.0) }
     #main {
         margin:1%;
         padding: 2%;
-        font-size: 300%;
+        font-size: 160%;
         line-height: 1.2em;
+    }
+
+    #main img {
+        float: none;
+        width: 100%;
     }
 
     #sitebg {
@@ -1305,30 +1316,4 @@ only screen and (min-device-pixel-ratio : 1.5)
 
 #header {
     height: 120px;
-}
-
-ul.menu li.deeper ul {
-    display: none;
-}
-
-ul.menu li.deeper ul li a {
-    padding: 2%;
-}
-
-ul.menu li.active ul {
-    display: block;
-}
-
-#tagline {
-    top: 25px;
-    float: right;
-    text-align: right;
-    display: block;
-    width: 97%;
-    font-size: 0.85rem;
-    font-family: Helvetica, Arial, Sans-Serif;
-    height: 100px;
-    margin: auto;
-    margin-right: 30px;   
-    letter-spacing: 0.15rem;
 }
