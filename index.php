@@ -73,12 +73,6 @@ if ($iskip) {
 
 ?>
 <!doctype html>
-<!--
- * Industrieschule Chemnitz
- *
- * HTML5 Boilerplate 3.0 by http://html5boilerplate.com, The Unlicense (aka: public domain)
- * Adapted for Joomla! by Thomas Schmidt / Christian Ziegenrücker
- -->
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -109,6 +103,9 @@ if ($iskip) {
   <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $tpn ?>/css/style.css">
   <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $tpn ?>/css/template.css">
   <!-- end CSS-->
+  <!--[if IE 8]>
+            <link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/<?php echo $tpn ?>/css/ie8.css">
+  <![endif]-->
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
