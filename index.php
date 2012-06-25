@@ -367,6 +367,12 @@ if ($iskip) {
   </script>
   <?php } ?>
    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $tpn ?>/js/template.js"></script>
+   <script>
+       document.write("<p>devicePixelRatio: " + window.devicePixelRatio + "</p>");
+       if(window.matchMedia("(device-width:480px) and (orientation:portrait)").matches) {
+        document.write("480px");
+       }
+   </script>
   </div>
   </div>
 </body>
