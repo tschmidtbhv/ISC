@@ -145,8 +145,13 @@ if ($iskip) {
       </a>
     </div>
     
-    <div id="tagline">
-        <?php echo htmlspecialchars($tagline); ?>
+    <div id="tagline_wrapper">        
+        <div id="tagline">
+            <strong>BSZ für Technik I</strong><br />
+            Park der OdF 1<br />
+            09111 Chemnitz<br />
+            +49 (0 37 1) 67 47 0<br />
+        </div>
     </div>
 
     <?php if ($this->countModules('topmenu') || $this->countModules('position-1')) { ?>
