@@ -357,7 +357,6 @@ ul.menu a {
     background: -o-linear-gradient(top, #ffffff 0%,#eeeeee 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, #ffffff 0%,#eeeeee 100%); /* IE10+ */
     background: linear-gradient(top, #ffffff 0%,#eeeeee 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
 }
 
 ul.menu a.first {
@@ -850,8 +849,6 @@ ins {
     background:#ccc;
 }
 
-
-/* debug for responsive design; enable in parameters for testing */
 #rdebug {
     position:fixed;
     bottom:0;
@@ -864,12 +861,6 @@ ins {
 
 #rmobile, #rnarrow, #rwide, #rmobilehd, #rie { display:none; }
 
-
-
-/* ******** PRETTIER **********/
-/* but remember that using prefixes is BAD:
-http://www.alistapart.com/articles/every-time-you-call-a-proprietary-feature-css3-a-kitten-dies/ */
-
 body {
     background: #2172a5; /* Old browsers */
     background: -moz-linear-gradient(left,  #2172a5 0%, #008ac1 100%); /* FF3.6+ */
@@ -878,8 +869,6 @@ body {
     background: -o-linear-gradient(left,  #2172a5 0%,#008ac1 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(left,  #2172a5 0%,#008ac1 100%); /* IE10+ */
     background: linear-gradient(left,  #2172a5 0%,#008ac1 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2172a5', endColorstr='#008ac1',GradientType=1 ); /* IE6-9 */
-
 }
 
 #topmenu ul li, #topmenu ul li a:hover  {
@@ -911,8 +900,6 @@ body {
     transition: background 0.4s ease 0s;
 }
 
-
-
 #topmenu li.deeper:hover > ul {
     -webkit-animation: s1 0.3s 1 ease;
     -moz-animation: s1 0.3s 1 ease;
@@ -926,10 +913,6 @@ to { -webkit-transform:  scale(1.0)  }
 from { -moz-transform: scale(0.5) }
 to { -moz-transform:  scale(1.0) }
 }
-
-
-
-
 
 /* ******** MEDIA QUERIES ********************/
 
@@ -997,7 +980,6 @@ to { -moz-transform:  scale(1.0) }
     }
 
 }
-
 
 /* other from 320 to 767px, or iPad/iPhone portrait (if viewport set to width=768)
    Shows left+center, right column flows below */
@@ -1217,9 +1199,6 @@ only screen and (min-device-pixel-ratio: 2)
 
 }
 
-
-
-
 /* iPhone 4, other high pixel density */
 @media
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
@@ -1241,15 +1220,6 @@ only screen and (min-device-pixel-ratio : 1.5)
     }
 
 }
-
-/* for IE<9 */
-.lt-ie9 .hbg-1 {
-    /* background: url('../images/header-960-0.jpg')  no-repeat ; */
-}
-.lt-ie9 #rdebug #rie {
-    display:inline;
-}
-
 
 /* ==|== print styles =======================================================
    Print styles.
@@ -1325,10 +1295,14 @@ ul.menu li.active ul {
     text-align: right;
     display: block;
     width: 97%;
-    font-size: 0.85rem;
+    font-size: 0.9em;
     font-family: Helvetica, Arial, Sans-Serif;
     height: 100px;
     margin: auto;
     margin-right: 30px;   
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.15em;
+}
+
+#breadcrumbs a {
+    color: white;
 }

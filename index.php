@@ -73,18 +73,14 @@ if ($iskip) {
 
 ?>
 <!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
 <head>
   <jdoc:include type="head" /> <!-- jdoc include head - meta charset, title, meta descr ... -->
 
-  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
-        -->
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.  -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <!-- Mobile viewport optimized: h5bp.com/viewport  -->
@@ -103,11 +99,12 @@ if ($iskip) {
   <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $tpn ?>/css/style.css">
   <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $tpn ?>/css/template.css">
   <!-- end CSS-->
-  <!--[if IE 8]>
-            <link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/<?php echo $tpn ?>/css/ie8.css">
+  
+  <!--[if lt IE 9]>
+     <script src="<?php echo $this->baseurl ?>/templates/<?php echo $tpn ?>/js/pie.js"></script>
+     <script type="text/javascript"></script>
+     <link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/<?php echo $tpn ?>/css/ie.css">
   <![endif]-->
-
-  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
   <?php if ($modernizr) { ?>
   <!-- All JavaScript at the bottom, except for Modernizr / Respond.
