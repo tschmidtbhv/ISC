@@ -1304,3 +1304,44 @@ only screen and (min-device-pixel-ratio : 1.5)
 #header {
     height: 120px;
 }
+
+ul.menu li.deeper ul {
+    display: none;
+}
+
+ul.menu li.deeper ul li a {
+    padding: 2%;
+}
+
+ul.menu li.active ul {
+    display: block;
+}
+
+#tagline {
+    top: 25px;
+    float: right;
+    text-align: right;
+    display: block;
+    width: 97%;
+    font-size: 0.9em;
+    font-family: Helvetica, Arial, Sans-Serif;
+    height: 100px;
+    margin: auto;
+    margin-right: 30px;   
+    letter-spacing: 0.15em;
+}
+
+#breadcrumbs a, #breadcrumbs a:visited  {
+    color: white;
+}
+
+#breadcrumbs a:hover {
+    color: #00a;
+}
+
+.item-separator {
+    border: 0;
+    height: 24px;
+    background: url('../images/line.png') no-repeat center bottom;
+}
+
