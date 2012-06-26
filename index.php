@@ -123,8 +123,8 @@ if ($iskip) {
   <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> 
   to experience this site.</p><![endif]-->
   <div id="sitebg">
-  <div id="sitewrapper" class="border-radius">
-  <div id="header" class="hbg-1">
+  <div id="sitewrapper">
+  <div id="header" >
 
     <div id="logo">
       <a href="<?php echo $this->baseurl; ?>" >
@@ -138,8 +138,10 @@ if ($iskip) {
     </div>
     
     <div id="tagline">
-        <div id="tagline_wrapper">        
-           <strong>BSZ für Technik I</strong><br />
+        <div id="headline">
+         <strong>Berufsschulzentrum für Technik I</strong>
+        </div>
+        <div id="tagline_wrapper">     
            Park der OdF 1<br />
            09111 Chemnitz<br />
            +49 (0 37 1) 67 47 0<br />

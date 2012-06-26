@@ -1282,10 +1282,18 @@ ul.menu li.deeper ul li.deeper ul {
 
 ul.menu li.deeper ul li.active ul {
     display: block;
+    background-color: none !important;
+}
+
+#headline {
+    font-size: 1.5em;
+    float:left;
+    margin-left: 260px;
+    margin-top: 20px;
 }
 
 #tagline {
-    top: 15px;
+    top: 25px;
     float: right;
     text-align: right;
     display: block;
