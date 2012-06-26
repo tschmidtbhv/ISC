@@ -155,9 +155,10 @@ body {
     -webkit-border-bottom-right-radius: 20px;
     -moz-border-radius-bottomright: 20px;
     border-bottom-right-radius: 20px;
-    -webkit-box-shadow: 1px 3px 14px #969795; /* webkit browser*/
-    -moz-box-shadow: 1px 3px 14px #969795; /* firefox */
-    box-shadow: 1px 3px 14px #969795;
+
+     -webkit-box-shadow: 1px 3px 14px #666; 
+    -moz-box-shadow: 1px 3px 14px #666; 
+    box-shadow: 1px 3px 14px #666;
 }
 
 .centerAndRight {
@@ -198,7 +199,7 @@ body {
     min-width:20px;
     min-height:20px;
     overflow:hidden;
-    font:24px/30px Times New Roman;
+    font-size:24px;
     z-index:20;
 }
 
@@ -211,7 +212,7 @@ body {
     height:80px;
     overflow:none;
     color:#222;
-    font:24px Times New Roman;
+    font-size:24px;
     font-style:italic;
 
 }
@@ -358,10 +359,6 @@ ul.menu a.last {
     -webkit-border-bottom-left-radius: 5px;
     -moz-border-radius-bottomleft: 5px;
     border-bottom-left-radius: 5px;
-}
-
-ul.menu a:hove {
-
 }
 
 ul.menu li ul {
@@ -1075,9 +1072,6 @@ only screen and (min-device-pixel-ratio : 1.5) and (orientation:portrait)
         background: none;
     }
 
-    .hbg-1 {
-        /* background: url('../images/header-768-0.jpg')  no-repeat ;*/
-    }
     #tagline {
         top:30px;
     }
@@ -1139,10 +1133,6 @@ only screen and (min-device-pixel-ratio: 2)
         margin-top: 5%;
     }
 
-    .hbg-1 {
-        /* background: url('../images/header-960-0.jpg')  no-repeat ; */
-    }
-
     #rwide {
         display:inline;
         color:yellow;
@@ -1181,10 +1171,6 @@ only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio : 1.5)
 {
-
-    .hbg-1 {
-        /* background: url('../images/header-960-0.jpg')  no-repeat ; */
-    }
     #content {
         min-height:815px;
     }
@@ -1206,9 +1192,9 @@ only screen and (min-device-pixel-ratio : 1.5)
         /* background: transparent !important; */ /* to print background images from plugins */
         color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
     a, a:visited { text-decoration: underline; }
-    /* a[href]:after { content: " (" attr(href) ")"; } */ /* don't print links */
-    abbr[title]:after { content: " (" attr(title) ")"; }
-    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+    a[href]:after { display: none;  }
+    abbr[title]:after {display: none;} 
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { display: none; } 
     pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
     thead { display: table-header-group; } /* h5bp.com/t */
     tr, img { page-break-inside: avoid; }
@@ -1216,9 +1202,19 @@ only screen and (min-device-pixel-ratio : 1.5)
     @page { margin: 0.5cm; }
     p, h2, h3 { orphans: 3; widows: 3; }
     h2, h3 { page-break-after: avoid; }
-
+    #sitewrapper {
+        border: none;
+    }
+    
+    #sitebg {
+        padding: 0;
+        margin: 0;
+        max-width: none;
+    }
     /* don't show ads */
     #banner { display:none; }
+    ul.menu {display: none;}
+    
 
 }
 
@@ -1250,22 +1246,40 @@ only screen and (min-device-pixel-ratio : 1.5)
 
 #header {
     height: 120px;
+    background: white url('../images/isc.png') no-repeat 570px;
 }
 
 ul.menu li.deeper ul {
     display: none;
 }
 
-ul.menu li.deeper ul li a {
-    padding: 2%;
-}
-
 ul.menu li.active ul {
     display: block;
 }
 
+ul.menu li.active ul li {
+    background: white;
+}
+
+ul.menu li.active ul li a {
+    padding-left: 10%;
+    background:  url('../images/arrow.png') no-repeat 3% center;
+}
+
+ul.menu li.active ul li.active a {
+    background:  url('../images/arrow_active.png') no-repeat 3% center;
+}
+
+ul.menu li.deeper ul li.deeper ul {
+    display: none;
+}
+
+ul.menu li.deeper ul li.active ul {
+    display: block;
+}
+
 #tagline {
-    top: 25px;
+    top: 15px;
     float: right;
     text-align: right;
     display: block;

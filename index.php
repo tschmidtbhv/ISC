@@ -123,7 +123,7 @@ if ($iskip) {
   <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> 
   to experience this site.</p><![endif]-->
   <div id="sitebg">
-  <div id="sitewrapper">
+  <div id="sitewrapper" class="border-radius">
   <div id="header" class="hbg-1">
 
     <div id="logo">
@@ -143,6 +143,7 @@ if ($iskip) {
            Park der OdF 1<br />
            09111 Chemnitz<br />
            +49 (0 37 1) 67 47 0<br />
+           bsz.c1@industrieschule.de<br />
        </div>
     </div>
 
